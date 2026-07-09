@@ -2,304 +2,190 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diagnóstico Estratégico | Mentoria de Conteúdo</title>
-
-  <meta name="description" content="Diagnóstico estratégico para entender sua marca, seu conteúdo e seu momento atual nas redes sociais." />
-  <meta name="theme-color" content="#050505" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Diagnóstico Estratégico | Mentoria Premium</title>
+  <meta name="description" content="Diagnóstico estratégico premium para entender sua marca, seu posicionamento e sua presença digital." />
+  <meta name="theme-color" content="#030306" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <main class="page-shell">
-    <div class="background-orbs" aria-hidden="true">
-      <span class="orb orb-one"></span>
-      <span class="orb orb-two"></span>
-      <span class="orb orb-three"></span>
-      <span class="orb orb-four"></span>
-    </div>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <div class="luxury-bg" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+    <div class="line-grid"></div>
+    <div class="spotlight"></div>
+  </div>
 
-    <section class="phone-stage" id="phoneStage">
-      <div class="phone-frame">
-        <div class="phone-glow"></div>
-
-        <div class="phone-screen">
-          <div class="status-bar">
-            <span>Mentoria</span>
-            <div class="status-icons">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+  <main class="site-shell">
+    <section class="experience" id="experience">
+      <aside class="brand-panel">
+        <div class="brand-top">
+          <div class="brand-mark"><span></span></div>
+          <div>
+            <strong>Mentoria de Conteúdo</strong>
+            <small>Diagnóstico estratégico</small>
           </div>
-
-          <div class="progress-area">
-            <div class="progress-top">
-              <span id="stepLabel">Início</span>
-              <span id="progressPercent">0%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" id="progressFill"></div>
-            </div>
-          </div>
-
-          <form id="diagnosticForm" class="form-flow">
-            <!-- Tela inicial -->
-            <section class="step active intro-step" data-step="0">
-              <div class="glass-card hero-card">
-                <div class="premium-badge">
-                  <span></span>
-                  Diagnóstico Premium
-                </div>
-
-                <h1>Antes de criar conteúdo, precisamos entender a sua marca.</h1>
-
-                <p>
-                  Responda algumas perguntas rápidas para eu analisar seu momento atual,
-                  seus bloqueios e o que precisa ser ajustado na sua presença digital.
-                </p>
-
-                <div class="mini-grid">
-                  <div>
-                    <strong>8</strong>
-                    <span>perguntas</span>
-                  </div>
-                  <div>
-                    <strong>3 min</strong>
-                    <span>rápido</span>
-                  </div>
-                  <div>
-                    <strong>100%</strong>
-                    <span>estratégico</span>
-                  </div>
-                </div>
-
-                <button type="button" class="primary-btn" data-next>
-                  Começar diagnóstico
-                  <span>→</span>
-                </button>
-              </div>
-            </section>
-
-            <!-- Pergunta 1 -->
-            <section class="step" data-step="1">
-              <div class="glass-card question-card">
-                <span class="question-number">01</span>
-                <h2>Qual é o seu nome?</h2>
-                <p>Me diga como você prefere ser chamado(a).</p>
-
-                <input
-                  type="text"
-                  name="nome"
-                  id="nome"
-                  placeholder="Digite seu nome"
-                  autocomplete="name"
-                  required
-                />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 2 -->
-            <section class="step" data-step="2">
-              <div class="glass-card question-card">
-                <span class="question-number">02</span>
-                <h2>Qual é o seu Instagram?</h2>
-                <p>Coloque o @ principal que você usa para divulgar sua marca.</p>
-
-                <input
-                  type="text"
-                  name="instagram"
-                  id="instagram"
-                  placeholder="@seuinstagram"
-                  autocomplete="off"
-                  required
-                />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 3 -->
-            <section class="step" data-step="3">
-              <div class="glass-card question-card">
-                <span class="question-number">03</span>
-                <h2>O que você vende hoje?</h2>
-                <p>Produto, serviço, atendimento, mentoria, curso, loja ou outro formato.</p>
-
-                <textarea
-                  name="produto"
-                  id="produto"
-                  placeholder="Ex: atendimentos de estética, consultoria, roupas femininas, social media..."
-                  required
-                ></textarea>
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 4 -->
-            <section class="step" data-step="4">
-              <div class="glass-card question-card">
-                <span class="question-number">04</span>
-                <h2>Qual é sua maior dificuldade nas redes sociais?</h2>
-                <p>Escolha o que mais trava seu crescimento hoje.</p>
-
-                <div class="option-list" data-name="dificuldade">
-                  <button type="button" class="option-card" data-value="Não sei o que postar">Não sei o que postar</button>
-                  <button type="button" class="option-card" data-value="Tenho vergonha de aparecer">Tenho vergonha de aparecer</button>
-                  <button type="button" class="option-card" data-value="Meu perfil parece amador">Meu perfil parece amador</button>
-                  <button type="button" class="option-card" data-value="Posto, mas não vendo">Posto, mas não vendo</button>
-                  <button type="button" class="option-card" data-value="Não consigo ter constância">Não consigo ter constância</button>
-                </div>
-
-                <input type="hidden" name="dificuldade" id="dificuldade" required />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 5 -->
-            <section class="step" data-step="5">
-              <div class="glass-card question-card">
-                <span class="question-number">05</span>
-                <h2>Hoje você já vende pelo Instagram?</h2>
-                <p>Me ajuda a entender seu momento comercial atual.</p>
-
-                <div class="option-list" data-name="vendas">
-                  <button type="button" class="option-card" data-value="Sim, com frequência">Sim, com frequência</button>
-                  <button type="button" class="option-card" data-value="Às vezes">Às vezes</button>
-                  <button type="button" class="option-card" data-value="Muito pouco">Muito pouco</button>
-                  <button type="button" class="option-card" data-value="Ainda não vendo">Ainda não vendo</button>
-                </div>
-
-                <input type="hidden" name="vendas" id="vendas" required />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 6 -->
-            <section class="step" data-step="6">
-              <div class="glass-card question-card">
-                <span class="question-number">06</span>
-                <h2>O que você mais quer melhorar agora?</h2>
-                <p>Escolha o objetivo mais importante para esta fase.</p>
-
-                <div class="option-list" data-name="objetivoPrincipal">
-                  <button type="button" class="option-card" data-value="Criar conteúdo com constância">Criar conteúdo com constância</button>
-                  <button type="button" class="option-card" data-value="Melhorar minha imagem profissional">Melhorar minha imagem profissional</button>
-                  <button type="button" class="option-card" data-value="Atrair mais clientes">Atrair mais clientes</button>
-                  <button type="button" class="option-card" data-value="Vender mais">Vender mais</button>
-                  <button type="button" class="option-card" data-value="Perder a vergonha de aparecer">Perder a vergonha de aparecer</button>
-                  <button type="button" class="option-card" data-value="Organizar meu posicionamento">Organizar meu posicionamento</button>
-                </div>
-
-                <input type="hidden" name="objetivoPrincipal" id="objetivoPrincipal" required />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 7 -->
-            <section class="step" data-step="7">
-              <div class="glass-card question-card">
-                <span class="question-number">07</span>
-                <h2>Quanto tempo por semana você consegue dedicar?</h2>
-                <p>Isso me ajuda a montar uma estratégia realista para você.</p>
-
-                <div class="option-list" data-name="tempo">
-                  <button type="button" class="option-card" data-value="Menos de 1 hora">Menos de 1 hora</button>
-                  <button type="button" class="option-card" data-value="1 a 2 horas">1 a 2 horas</button>
-                  <button type="button" class="option-card" data-value="3 a 5 horas">3 a 5 horas</button>
-                  <button type="button" class="option-card" data-value="Mais de 5 horas">Mais de 5 horas</button>
-                </div>
-
-                <input type="hidden" name="tempo" id="tempo" required />
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Prosseguir <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Pergunta 8 -->
-            <section class="step" data-step="8">
-              <div class="glass-card question-card">
-                <span class="question-number">08</span>
-                <h2>Onde você quer chegar com sua marca?</h2>
-                <p>Resuma em uma frase o resultado que você deseja alcançar.</p>
-
-                <textarea
-                  name="objetivoFinal"
-                  id="objetivoFinal"
-                  placeholder="Ex: quero ter uma marca mais profissional e vender todos os dias pelo Instagram."
-                  required
-                ></textarea>
-
-                <div class="actions">
-                  <button type="button" class="ghost-btn" data-prev>Voltar</button>
-                  <button type="button" class="primary-btn" data-next>Finalizar <span>→</span></button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Tela final -->
-            <section class="step final-step" data-step="9">
-              <div class="glass-card hero-card">
-                <div class="premium-badge">
-                  <span></span>
-                  Diagnóstico finalizado
-                </div>
-
-                <h2>Agora envie suas respostas pelo WhatsApp.</h2>
-
-                <p>
-                  Clique no botão abaixo e suas respostas serão organizadas automaticamente
-                  em uma mensagem para iniciar sua análise.
-                </p>
-
-                <button type="submit" class="primary-btn whatsapp-btn">
-                  Enviar diagnóstico no WhatsApp
-                  <span>↗</span>
-                </button>
-
-                <button type="button" class="ghost-btn back-final" data-prev>
-                  Revisar respostas
-                </button>
-              </div>
-            </section>
-          </form>
         </div>
-      </div>
+
+        <div class="brand-copy">
+          <span class="eyebrow">Entrada exclusiva</span>
+          <h1>Antes de construir autoridade, precisamos entender a sua marca.</h1>
+          <p>Esse diagnóstico foi criado para identificar seu momento atual, suas travas e o próximo nível da sua presença digital.</p>
+        </div>
+
+        <div class="brand-metrics">
+          <div><strong>01</strong><span>pergunta por tela</span></div>
+          <div><strong>3 min</strong><span>experiência rápida</span></div>
+          <div><strong>100%</strong><span>direcionado</span></div>
+        </div>
+      </aside>
+
+      <section class="form-device" id="formDevice">
+        <div class="device-shine"></div>
+
+        <div class="device-header">
+          <div class="header-pill"><span class="live-dot"></span>Diagnóstico Premium</div>
+          <div class="step-counter"><span id="stepLabel">Início</span><strong id="progressPercent">0%</strong></div>
+        </div>
+
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+        <form id="diagnosticForm" class="form-flow">
+          <section class="step active intro-step" data-step="0">
+            <div class="card hero-card">
+              <div class="card-orbit" aria-hidden="true"></div>
+              <span class="mini-label">Diagnóstico estratégico</span>
+              <h2>Vamos mapear sua presença digital.</h2>
+              <p>Responda com sinceridade. Suas respostas vão chegar organizadas no WhatsApp para análise antes da mentoria.</p>
+              <button type="button" class="primary-btn magnetic" data-next>Começar agora <span>→</span></button>
+            </div>
+          </section>
+
+          <section class="step" data-step="1">
+            <div class="card question-card">
+              <span class="question-index">01 / 08</span>
+              <h2>Qual é o seu nome?</h2>
+              <p>Me diga como você prefere ser chamado(a).</p>
+              <label class="input-wrap"><input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="name" required /><span></span></label>
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="2">
+            <div class="card question-card">
+              <span class="question-index">02 / 08</span>
+              <h2>Qual é o seu Instagram?</h2>
+              <p>Coloque o perfil principal que representa sua marca.</p>
+              <label class="input-wrap"><input type="text" name="instagram" id="instagram" placeholder="@seuinstagram" autocomplete="off" required /><span></span></label>
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="3">
+            <div class="card question-card">
+              <span class="question-index">03 / 08</span>
+              <h2>O que você vende hoje?</h2>
+              <p>Produto, serviço, atendimento, curso, mentoria ou outro formato.</p>
+              <label class="input-wrap"><textarea name="produto" id="produto" placeholder="Ex: atendimento de estética, consultoria, roupas femininas, social media..." required></textarea><span></span></label>
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="4">
+            <div class="card question-card">
+              <span class="question-index">04 / 08</span>
+              <h2>Qual é sua maior dificuldade hoje?</h2>
+              <p>Escolha o ponto que mais trava seu crescimento nas redes.</p>
+              <div class="option-list" data-name="dificuldade">
+                <button type="button" class="option-card" data-value="Não sei o que postar"><span>Não sei o que postar</span></button>
+                <button type="button" class="option-card" data-value="Tenho vergonha de aparecer"><span>Tenho vergonha de aparecer</span></button>
+                <button type="button" class="option-card" data-value="Meu perfil parece amador"><span>Meu perfil parece amador</span></button>
+                <button type="button" class="option-card" data-value="Posto, mas não vendo"><span>Posto, mas não vendo</span></button>
+                <button type="button" class="option-card" data-value="Não consigo ter constância"><span>Não consigo ter constância</span></button>
+              </div>
+              <input type="hidden" name="dificuldade" id="dificuldade" required />
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="5">
+            <div class="card question-card">
+              <span class="question-index">05 / 08</span>
+              <h2>Você já vende pelo Instagram?</h2>
+              <p>Isso mostra o estágio atual da sua presença digital.</p>
+              <div class="option-list" data-name="vendas">
+                <button type="button" class="option-card" data-value="Sim, com frequência"><span>Sim, com frequência</span></button>
+                <button type="button" class="option-card" data-value="Às vezes"><span>Às vezes</span></button>
+                <button type="button" class="option-card" data-value="Muito pouco"><span>Muito pouco</span></button>
+                <button type="button" class="option-card" data-value="Ainda não vendo"><span>Ainda não vendo</span></button>
+              </div>
+              <input type="hidden" name="vendas" id="vendas" required />
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="6">
+            <div class="card question-card">
+              <span class="question-index">06 / 08</span>
+              <h2>O que você mais quer melhorar agora?</h2>
+              <p>Escolha o foco principal para essa fase.</p>
+              <div class="option-list" data-name="objetivoPrincipal">
+                <button type="button" class="option-card" data-value="Criar conteúdo com constância"><span>Criar conteúdo com constância</span></button>
+                <button type="button" class="option-card" data-value="Melhorar minha imagem profissional"><span>Melhorar minha imagem profissional</span></button>
+                <button type="button" class="option-card" data-value="Atrair mais clientes"><span>Atrair mais clientes</span></button>
+                <button type="button" class="option-card" data-value="Vender mais"><span>Vender mais</span></button>
+                <button type="button" class="option-card" data-value="Perder a vergonha de aparecer"><span>Perder a vergonha de aparecer</span></button>
+                <button type="button" class="option-card" data-value="Organizar meu posicionamento"><span>Organizar meu posicionamento</span></button>
+              </div>
+              <input type="hidden" name="objetivoPrincipal" id="objetivoPrincipal" required />
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="7">
+            <div class="card question-card">
+              <span class="question-index">07 / 08</span>
+              <h2>Quanto tempo por semana você consegue dedicar?</h2>
+              <p>A estratégia precisa ser bonita, mas também possível de executar.</p>
+              <div class="option-list" data-name="tempo">
+                <button type="button" class="option-card" data-value="Menos de 1 hora"><span>Menos de 1 hora</span></button>
+                <button type="button" class="option-card" data-value="1 a 2 horas"><span>1 a 2 horas</span></button>
+                <button type="button" class="option-card" data-value="3 a 5 horas"><span>3 a 5 horas</span></button>
+                <button type="button" class="option-card" data-value="Mais de 5 horas"><span>Mais de 5 horas</span></button>
+              </div>
+              <input type="hidden" name="tempo" id="tempo" required />
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Continuar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step" data-step="8">
+            <div class="card question-card">
+              <span class="question-index">08 / 08</span>
+              <h2>Onde você quer chegar com sua marca?</h2>
+              <p>Resuma o resultado que você deseja alcançar com clareza.</p>
+              <label class="input-wrap"><textarea name="objetivoFinal" id="objetivoFinal" placeholder="Ex: quero ter uma marca mais profissional e vender com constância pelo Instagram." required></textarea><span></span></label>
+              <div class="actions"><button type="button" class="secondary-btn" data-prev>Voltar</button><button type="button" class="primary-btn" data-next>Finalizar <span>→</span></button></div>
+            </div>
+          </section>
+
+          <section class="step final-step" data-step="9">
+            <div class="card hero-card">
+              <span class="mini-label success">Diagnóstico finalizado</span>
+              <h2>Suas respostas estão prontas.</h2>
+              <p>Agora clique no botão abaixo para enviar tudo organizado pelo WhatsApp. Esse será o primeiro passo para o seu direcionamento estratégico.</p>
+              <button type="submit" class="primary-btn whatsapp-btn">Enviar pelo WhatsApp <span>↗</span></button>
+              <button type="button" class="secondary-btn final-back" data-prev>Revisar respostas</button>
+            </div>
+          </section>
+        </form>
+      </section>
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
