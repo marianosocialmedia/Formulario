@@ -7,7 +7,7 @@ const progressPercent = document.querySelector("#progressPercent");
 const stepLabel = document.querySelector("#stepLabel");
 const formDevice = document.querySelector("#formDevice");
 
-const whatsappNumber = "5524992222862";
+const whatsappNumber = "5521971574979";
 
 let currentStep = 0;
 let isAnimating = false;
@@ -62,6 +62,7 @@ function goToStep(nextStep, direction = "next") {
     newStep.classList.add("active");
     updateProgress();
     premiumPulse();
+    resetScrollInsideStep(newStep);
   });
 
   setTimeout(() => {
@@ -73,6 +74,14 @@ function goToStep(nextStep, direction = "next") {
 
     isAnimating = false;
   }, 620);
+}
+
+function resetScrollInsideStep(step) {
+  const scrollArea = step.querySelector(".scroll-safe");
+
+  if (scrollArea) {
+    scrollArea.scrollTop = 0;
+  }
 }
 
 function premiumPulse() {
@@ -233,6 +242,8 @@ const canHover = window.matchMedia("(hover: hover)").matches;
 
 if (canHover && formDevice) {
   window.addEventListener("mousemove", (event) => {
+    if (window.innerWidth < 900) return;
+
     const rect = formDevice.getBoundingClientRect();
     const deviceCenterX = rect.left + rect.width / 2;
     const deviceCenterY = rect.top + rect.height / 2;
